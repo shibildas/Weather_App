@@ -77,9 +77,9 @@ export default function Home() {
         <Image src={bg}
         data-te-animation-init
         data-te-animation-start="onChange"
-        data-te-animation="[fade-in_2s_ease-in-out]"
-        data-te-animation-delay="500"
-        layout='fill' className='object-cover transition-all duration-300 ease-in-out delay-300'/>
+        data-te-animation="[fade-in_1s_ease-in-out]"
+        data-te-animation-delay="400"
+        layout='fill' className='object-cover'/>
         <div className='relativeflex justify-between items-center max-w-[500px] m-auto pt-4 text-white z-10'>
           <form className='flex justify-between items-center w-full m-auto p-3 bg-transparent border border-gray-300 text-white rounded-2xl'>
             <div>
