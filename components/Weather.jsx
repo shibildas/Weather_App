@@ -19,8 +19,21 @@ const Weather = ({ data }) => {
         </div>
         <p className="text-9xl">{data?.main?.temp?.toFixed(0)}&#176;C</p>
       </div>
-      <div className="bg-black/50 relative p-8 rounded-md font-bold">
+      <div className="bg-zinc-400/50 relative p-8 rounded-md font-bold text-black">
         <p className="text-2xl text-center pb-6">Weather In: {data?.name} </p>
+        <div className="flex justify-between text-center">
+          <div className="text-2xl">
+            <p>{data?.main?.pressure?.toFixed(0)} Pa</p>
+            <p className="text-xl">Pressure</p>
+          </div>
+          <div className="text-2xl">
+            <p>"{data?.weather[0].description}" </p>
+            <p className="text-xl">Condition</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-black/50 relative p-8 rounded-md font-bold">
+        {/* <p className="text-2xl text-center pb-6">Weather In: {data?.name} </p> */}
         <div className="flex justify-between text-center">
           <div className="text-2xl">
             <p>{data?.main?.feels_like?.toFixed(0)}&#176;C</p>
